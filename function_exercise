@@ -1,0 +1,23 @@
+#!/usr/bin/env python3.8
+
+#Prompt user for message to echo
+
+message = input(f"What would you like to say? ")
+
+count = input(f"How many times would you like to say it? ").strip()
+
+if count:
+    count = int(count)
+else:
+    count = 1
+
+def count_print(message, count):
+    while count > 0:
+        print(message)
+        count = count - 1
+
+count_print(message, count)
+
+
+
+
