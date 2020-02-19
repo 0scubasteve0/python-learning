@@ -9,7 +9,12 @@ filecreate = subprocess.run(['touch', filename])
 
 fileopen = open(filename, 'w')
 
-filewrite = fileopen.writelines(content)
-
-
+lines = []
+while True:
+    line = input()
+    if content:
+        lines.append(content)
+    else:
+        break
+text  = '\n'.join(lines)
 
